@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Code, Palette, Zap, Puzzle } from "lucide-react";
+import { ArrowRight, Code, Zap, Puzzle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -55,7 +55,7 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Hi, I'm
+          Hi, I&apos;m
           <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
             Khalid
           </span>

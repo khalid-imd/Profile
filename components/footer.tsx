@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const socialLinks = [
   {
@@ -24,7 +24,7 @@ const socialLinks = [
     icon: Mail,
     color: "hover:text-green-500",
   },
-]
+];
 
 export function Footer() {
   return (
@@ -41,7 +41,8 @@ export function Footer() {
               Get in Touch
             </h3>
             <p className="text-muted-foreground max-w-md">
-              Let's connect and discuss opportunities, collaborations, or just have a chat about technology.
+              Let&apos;s connect and discuss opportunities, collaborations, or
+              just have a chat about technology.
             </p>
           </motion.div>
 
@@ -58,8 +59,17 @@ export function Footer() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
-                <Button variant="outline" size="icon" asChild className={`transition-colors ${link.color}`}>
-                  <Link href={link.href} target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  asChild
+                  className={`transition-colors ${link.color}`}
+                >
+                  <Link
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <link.icon className="h-5 w-5" />
                     <span className="sr-only">{link.name}</span>
                   </Link>
@@ -74,10 +84,12 @@ export function Footer() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-sm text-muted-foreground"
           >
-            <p>&copy; {new Date().getFullYear()} Khalid. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Khalid. All rights reserved.
+            </p>
           </motion.div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

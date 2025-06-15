@@ -135,21 +135,21 @@ export default function AboutPage() {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hi! I'm a passionate frontend developer who began my journey
-                  into web development after college by joining a coding
+                  Hi! I&apos;m a passionate frontend developer who began my
+                  journey into web development after college by joining a coding
                   bootcamp. That experience sparked my enthusiasm for building
                   user-friendly and modern web applications.
                 </p>
                 <p>
-                  Since then, I've been constantly learning and improving,
+                  Since then, I&pos;ve been constantly learning and improving,
                   diving deep into frontend technologies like JavaScript and
-                  React. Along the way, I've explored tools such as Next.js,
-                  React Native, Tailwind CSS, and TypeScript to build responsive
-                  and scalable interfaces.
+                  React. Along the way, I&apos;ve explored tools such as
+                  Next.js, React Native, Tailwind CSS, and TypeScript to build
+                  responsive and scalable interfaces.
                 </p>
                 <p>
-                  I enjoy crafting clean and reusable components, and I'm always
-                  excited to learn something new that enhances the user
+                  I enjoy crafting clean and reusable components, and I&apos;m
+                  always excited to learn something new that enhances the user
                   experience.
                 </p>
               </div>
