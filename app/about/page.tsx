@@ -3,10 +3,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Download, Book } from "lucide-react";
+import { Paperclip, Book } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import profieImage from "../assets/profileImage.jpg";
 
 const skills = {
   Frontend: [
@@ -62,8 +63,7 @@ export default function AboutPage() {
           </span>
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Get to know me better - my journey, skills, and what drives my passion
-          for technology.
+          Get to know me better
         </p>
       </motion.div>
 
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   <div className="w-full h-full rounded-full bg-background" />
                 </div>
                 <Image
-                  src="/placeholder.svg?height=120&width=120"
+                  src={profieImage}
                   alt="Profile"
                   width={120}
                   height={120}
@@ -107,9 +107,12 @@ export default function AboutPage() {
                 asChild
                 className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
               >
-                <Link href="/resume.pdf" target="_blank">
-                  <Download className="h-4 w-4 mr-2" />
-                  Download Resume
+                <Link
+                  href="https://drive.google.com/file/d/1t9WCCF4FJJV60_db4xmzcbZPRiUHQjNr/view?usp=drive_link"
+                  target="_blank"
+                >
+                  <Paperclip className="h-4 w-4 mr-2" />
+                  Resume
                 </Link>
               </Button>
             </CardContent>
